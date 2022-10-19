@@ -89,17 +89,6 @@
         alertMessage: '',
         alertVariant: ''
       },
-      computed: {
-        state() {
-          return this.message.length >= 10
-        },
-        invalidFeedback() {
-          if (this.name.length > 0) {
-            return 'Enter at least 4 characters.'
-          }
-          return 'Please enter something.'
-        }
-      },
       methods: {
         formatDateAssigned(value) {
           return (new Date(value)).toLocaleString('en-US')
